@@ -1,0 +1,113 @@
+{
+  "$id": "https://raw.githubusercontent.com/DamSenViet/kle-json/master/v1/KeyChanges.schema.json",
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "title": "Key Changes",
+  "description": "The changes between succeeding keys or the next following key.",
+  "type": "object",
+  "properties": {
+    "r": {
+      "description": "Rotation angle in degrees.",
+      "type": "number"
+    },
+    "rx": {
+      "description": "X position of rotation origin in key units.",
+      "type": "number"
+    },
+    "ry": {
+      "description": "Y posiiton of rotation origin in key units",
+      "type": "number"
+    },
+    "a": {
+      "description": "The alignment for label text, label sizes, label colors.",
+      "type": "number",
+      "minimum": 0,
+      "maximum": 7
+    },
+    "f": {
+      "description": "Default label size for succeeding keys.",
+      "type": "number"
+    },
+    "f2": {
+      "description": "Optimized label size for succeeding keys.",
+      "type": "number"
+    },
+    "fa": {
+      "description": "Label sizes for succeeding keys.",
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    },
+    "p": {
+      "description": "Profile for succeeding keys."
+    },
+    "c": {
+      "description": "Aligned cap CSS color for succeeding keys.",
+      "type": "string"
+    },
+    "t": {
+      "description": "Aligned label CSS colors for succeeding keys.",
+      "type": "string"
+    },
+    "x": {
+      "description": "X position of the raised primary shape in key units.",
+      "type": "number"
+    },
+    "y": {
+      "description": "Y position of the raised primary shape in key units.",
+      "type": "number"
+    },
+    "w": {
+      "description": "Width position of the raised primary shape in key units.",
+      "type": "number"
+    },
+    "h": {
+      "description": "Height position of the raised primary shape in key units.",
+      "type": "number"
+    },
+    "x2": {
+      "description": "X position offset of the lowered secondary shape in key units for the next key.",
+      "type": "number"
+    },
+    "y2": {
+      "description": "Y position offset of lowered secondary shape in key units for the next key.",
+      "type": "number"
+    },
+    "w2": {
+      "description": "Width of lowered secondary shape in key units for the next key.",
+      "type": "number"
+    },
+    "h2": {
+      "description": "Height of lowered secondary shape in key units for the next key.",
+      "type": "number"
+    },
+    "n": {
+      "description": "Whether the next key is a homing key.",
+      "type": "boolean"
+    },
+    "l": {
+      "description": "Whether the next key is a stepped key.",
+      "type": "boolean"
+    },
+    "d": {
+      "description": "Whether the next key is a decal key.",
+      "type": "boolean"
+    },
+    "g": {
+      "description": "Whether succeeding keys are ghosted keys.",
+      "type": "boolean"
+    },
+    "sm": {
+      "description": "Switch mount for succeeding keys.",
+      "type": "string"
+    },
+    "sb": {
+      "description": "Switch brand for succeeding keys.",
+      "type": "string"
+    },
+    "st": {
+      "description": "Switch type for succeeding keys.",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$id": "https://raw.githubusercontent.com/DamSenViet/kle-json/master/v1/Metadata.schema.json",
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "title": "Metadata",
+  "description": "Metadata information.",
+  "type": "object",
+  "properties": {
+    "author": {
+      "description": "Author name.",
+      "type": "string"
+    },
+    "backcolor": {
+      "description": "Background CSS color.",
+      "type": "string"
+    },
+    "background": { "$ref": "./Background.schema.json" },
+    "name": {
+      "description": "The Keyboard name.",
+      "type": "string"
+    },
+    "notes": {
+      "description": "Author's notes.",
+      "type": "string"
+    },
+    "radii": {
+      "description": "CSS border radius value.",
+      "type": "string"
+    },
+    "switchMount": {
+      "description": "Default switch mount for the keys.",
+      "type": "string"
+    },
+    "switchBrand": {
+      "description": "Default switch brand for the keys.",
+      "type": "string"
+    },
+    "switchType": {
+      "description": "Default switch type for the keys.",
+      "type": "string"
+    },
+    "css": {
+      "description": "CSS stylesheet.",
+      "type": "string"
+    },
+    "pcb": {
+      "description": "Whether the switches are pcb mounted.",
+      "type": "boolean"
+    },
+    "plate": {
+      "description": "Whether the switches are plate mounted",
+      "type": "boolean"
+    }
+  }
+}

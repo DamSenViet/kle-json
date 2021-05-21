@@ -1,0 +1,33 @@
+{
+  "$id": "https://raw.githubusercontent.com/DamSenViet/kle-json/master/v1/Cluster.schema.json",
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "title": "Cluster",
+  "description": "Keys and their running changes grouped by their rotation origin and y coordinate.",
+  "type": "array",
+  "items": [
+    {
+      "anyOf": [
+        { "$ref": "./KeyLabels.schema.json" },
+        { "$ref": "./KeyChanges.schema.json" }
+      ]
+    }
+  ],
+  "additionalItems": {
+    "anyOf": [
+      { "$ref": "./KeyLabels.schema.json" },
+      {
+        "allOf": [
+          { "$ref": "./KeyChanges.schema.json" },
+          {
+            "type": "object",
+            "properties": {
+              "r": false,
+              "rx": false,
+              "ry": false
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
