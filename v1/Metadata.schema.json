@@ -13,7 +13,7 @@
       "description": "Background CSS color.",
       "type": "string"
     },
-    "background": { "$ref": "./Background.schema.json" },
+    "background": { "$ref": "https://raw.githubusercontent.com/DamSenViet/kle-json/master/v1/Background.schema.json" },
     "name": {
       "description": "The Keyboard name.",
       "type": "string"

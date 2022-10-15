@@ -14,10 +14,10 @@
   ],
   "additionalItems": {
     "anyOf": [
-      { "$ref": "./KeyLabels.schema.json" },
+      { "$ref": "https://raw.githubusercontent.com/DamSenViet/kle-json/master/v1/KeyLabels.schema.json" },
       {
         "allOf": [
-          { "$ref": "./KeyChanges.schema.json" },
+          { "$ref": "https://raw.githubusercontent.com/DamSenViet/kle-json/master/v1/KeyChanges.schema.json" },
           {
             "type": "object",
             "properties": {
