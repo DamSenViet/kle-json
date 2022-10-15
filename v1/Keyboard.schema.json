@@ -7,7 +7,7 @@
   "items": [
     {
       "anyOf": [
-        { "$ref": "./KeyChanges.schema.json" },
+        { "$ref": "./Metadata.schema.json" },
         { "$ref": "./Cluster.schema.json" }
       ]
     }
